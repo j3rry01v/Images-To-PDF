@@ -18,6 +18,7 @@ for dirpath, dirnames, filenames in os.walk(folder):
     for filename in [f for f in filenames if f.endswith(".jpg")]:
         full_path = os.path.join(dirpath, filename)
         imagelist.append(full_path)
+        # adding png files if exist 
 for dirpath, dirnames, filenames in os.walk(folder):
     for filename in [f for f in filenames if f.endswith(".png")]:
         full_path = os.path.join(dirpath, filename)
